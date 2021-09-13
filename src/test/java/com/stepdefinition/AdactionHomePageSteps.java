@@ -16,7 +16,6 @@ public class AdactionHomePageSteps extends LibGlobal {
 
 	@Given("User launch the browser and navidate to adactin page")
 	public void user_launch_the_browser_and_navidate_to_adactin_page() {
-		getDriver();
 		getUrl("http://adactinhotelapp.com/");
 	}
 
@@ -39,7 +38,6 @@ public class AdactionHomePageSteps extends LibGlobal {
 		} else {
 			System.out.println("Not displayed");
 		}
-		closeBrowser();
 	}
 
 	@When("^User enters the \"([^\"]*)\" and \"([^\"]*)\" in adaction home page$")

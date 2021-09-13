@@ -4,12 +4,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.stepdefinition.Hooks;
 import com.utils.LibGlobal;
 
 public class AdactinPagePojo extends LibGlobal {
 
 	public AdactinPagePojo() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(Hooks.driver, this);
 	}
 
 	@FindBy(id = "username")
